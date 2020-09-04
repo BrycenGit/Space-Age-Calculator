@@ -13,20 +13,19 @@ export class User {
     this.age = age;
     this.spaceAge;
     this.yearsExpected;
-    this.extraYears;
-    this.averageExpectancy = 78.5
+    this.averageExpectancy = 78
   }
   mercuryAge() {
     this.spaceAge = Math.round(this.age * (.24));
   }
   venusAge() {
-    this.spaceAge = this.age * (.62);
+    this.spaceAge = Math.round(this.age * (.62));
   }
   marsAge() {
-    this.spaceAge = this.age * (1.88);
+    this.spaceAge = Math.round(this.age * (1.88));
   }
   jupiterAge() {
-    this.spaceAge = this.age * (11.86);
+    this.spaceAge = Math.round(this.age * (11.86));
   }
   lifeExpectancy() {
     if (this.age >= this.averageExpectancy) {
