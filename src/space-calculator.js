@@ -17,7 +17,7 @@ export class User {
     this.averageExpectancy = 78.5
   }
   mercuryAge() {
-    this.spaceAge = this.age * (.24);
+    this.spaceAge = Math.round(this.age * (.24));
   }
   venusAge() {
     this.spaceAge = this.age * (.62);
