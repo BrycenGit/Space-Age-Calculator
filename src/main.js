@@ -15,14 +15,15 @@ $('form#user-input').submit(function(event) {
   let newUser = new User(inputtedName, inputtedAge);
   spaceCalculator.addUser(newUser);
   let greeting = (`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`)
+  let LastInArray = (spaceCalculator.users.length - 1);
   $('#show').show();
   $('.user-greeting').text(greeting);
-  console.log(spaceCalculator.users[spaceCalculator.users.length - 1])
+  console.log(spaceCalculator.users[LastInArray]);
   console.log(spaceCalculator.users[0]);
 })
 
 $('#mercury').click(function() {
   spaceCalculator.users[length].mercuryAge();
   $('.user-greeting').text(spaceCalculator.users[0].spaceAge);
-  console.log('hello');
+  console.log(LastInArray);
 })
