@@ -14,7 +14,6 @@ $('form#user-input').submit(function(event) {
   $('input#name').val('');
   let newUser = new User(inputtedName, inputtedAge);
   spaceCalculator.addUser(newUser);
-
   $('#show').show();
   $('form#user-input').hide();
   $('.space-age').text('');
@@ -29,7 +28,6 @@ $('#venus').click(function() {
   $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].venusAge());
   $('#show-expect').show();
 })
-
 $('#mars').click(function() {
   $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].marsAge());
   $('#show-expect').show();
@@ -38,12 +36,10 @@ $('#jupiter').click(function() {
   $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].jupiterAge());
   $('#show-expect').show();
 })
-
 $('#expected').click(function() {
   $('.expected').text(spaceCalculator.users[spaceCalculator.users.length - 1].lifeExpectancy());
   $('#show-more').show();
 })
-
 $('#mercury-after').click(function() {
   $('.final-result').text(spaceCalculator.users[spaceCalculator.users.length - 1].mercuryAgeAfter());
   $('#redo').show();
@@ -52,7 +48,6 @@ $('#venus-after').click(function() {
   $('.final-result').text(spaceCalculator.users[spaceCalculator.users.length - 1].venusAgeAfter());
   $('#redo').show();
 })
-
 $('#mars-after').click(function() {
   $('.final-result').text(spaceCalculator.users[spaceCalculator.users.length - 1].marsAgeAfter());
   $('#redo').show();
@@ -61,7 +56,6 @@ $('#jupiter-after').click(function() {
   $('.final-result').text(spaceCalculator.users[spaceCalculator.users.length - 1].jupiterAgeAfter());
   $('#redo').show();
 })
-
 $('#redo-button').click(function() {
   location.reload();
 });

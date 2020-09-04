@@ -20,7 +20,6 @@ describe('User', ()=> {
   beforeEach(() => {
     newUser = new User (name, age);
   })
-  
   test('should creat an object with user name and user age', () => {
     expect(newUser.age).toBe(28);
   })
@@ -43,13 +42,11 @@ describe('User', ()=> {
   test('will take user age and return how many years they will have to live based on average life expectancy(us = 78.5)', () => {
     newUser.lifeExpectancy();
     expect(newUser.yearsExpected).toBe(50);
-    
   })
   test('if the user age is more than life expectency it will return how long they have lived past expectency', () => {
     let oldUser;
     oldUser = new User('brycen', 100)
     oldUser.lifeExpectancy();
     expect(oldUser.yearsExpected).toBe(22);
-    
   })
 })

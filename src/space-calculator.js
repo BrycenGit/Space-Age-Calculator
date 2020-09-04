@@ -6,7 +6,6 @@ export class Calculator {
     this.users.push(userToAdd);
   } 
 }
-
 export class User {
   constructor(name, age) {
     this.name = name;
@@ -42,7 +41,6 @@ export class User {
       return (`we are so sorry, you only have ${this.yearsExpected} years left on earth!`);
     }
   }
-
   mercuryAgeAfter() {
     this.spaceYearsExpected = Math.round(this.yearsExpected * (.24));
     return (`${this.name}, on Mercury that is ${this.spaceYearsExpected} years!`);
@@ -59,6 +57,4 @@ export class User {
     this.spaceYearsExpected = Math.round(this.yearsExpected * (11.86));
     return (`${this.name}, on Jupiter that is ${this.spaceYearsExpected} years!`);
   }
-
-
 }
