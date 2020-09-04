@@ -3,7 +3,7 @@
 _Version 1, 9/4/20_
 
 ## _Description_
-This program will take a users age in years and return their age from different planets
+This program will take a users age in years and return their age from different planets depending on which button they click.
 
 ## _Specs_
 1. **Spec:** Will take in an age and return age
@@ -40,10 +40,8 @@ This program will take a users age in years and return their age from different 
 ## _Setup_
 * Clone repository to desktop.
 * Open repository.
-* Drag index.html file into an open browser.
-
-## _Repository_
-* [gh-pages](https://brycengit.github.io//)
+* In terminal run $npm install.
+* In terminal run $npm run start.
 
 ### _Liscensing_
  **MIT liscense**
