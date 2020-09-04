@@ -10,4 +10,7 @@ export class User {
   venusAge() {
     this.spaceAge = this.age * (.62);
   }
+  marsAge() {
+    this.spaceAge = this.age * (1.88);
+  }
 }
