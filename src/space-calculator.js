@@ -20,6 +20,10 @@ export class User {
     this.spaceAge = this.age * (11.86);
   }
   lifeExpectancy() {
-    this.yearsLeft = this.averageExpectancy - this.age;
+    if (this.age >= this.averageExpectancy) {
+      this.extraYears = this.age - this.averageExpectancy;
+    } else {
+      this.yearsLeft = this.averageExpectancy - this.age;
+    }
   }
 }

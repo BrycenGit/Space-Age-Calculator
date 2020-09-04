@@ -34,9 +34,11 @@ describe('User', ()=> {
     expect(newUser.yearsLeft).toBe(50.5);
     
   })
-  test('if the user age is mor than life expectency it will return how long they have lived past expectency', () => {
-
-    expect(newUser.yearsLeft).toBe(50.5);
+  test('if the user age is more than life expectency it will return how long they have lived past expectency', () => {
+    let oldUser;
+    oldUser = new User('brycen', 100)
+    oldUser.lifeExpectancy();
+    expect(oldUser.extraYears).toBe(21.5);
     
   })
 })
