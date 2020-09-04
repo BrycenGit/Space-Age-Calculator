@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1599244110629" clover="3.2.0">
-  <project timestamp="1599244110629" name="All files">
+<coverage generated="1599244186021" clover="3.2.0">
+  <project timestamp="1599244186022" name="All files">
     <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="23" coveredelements="23" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
     <file name="space-calculator.js" path="C:\Users\Brycen\Desktop\inter-galactic-planetary-age-calculator\src\space-calculator.js">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
