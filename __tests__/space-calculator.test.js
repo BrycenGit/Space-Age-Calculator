@@ -30,7 +30,8 @@ describe('User', ()=> {
     expect(newUser.spaceAge).toBe(332.08);
   })
   test('will take user age and return how many years they will have to live based on average life expectancy(us = 78.5)', () => {
-    expect(newUser.yearsLeft).toBe(20);
+    newUser.lifeExpectancy();
+    expect(newUser.yearsLeft).toBe(50.5);
     
   })
 })
