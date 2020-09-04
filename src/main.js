@@ -24,6 +24,21 @@ $('form#user-input').submit(function(event) {
 
 $('#mercury').click(function() {
   spaceCalculator.users[spaceCalculator.users.length - 1].mercuryAge();
-  $('.user-greeting').text(`Your mars age is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  $('.user-greeting').text(`Your age on mercury is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  console.log(spaceCalculator.users.length - 1);
+})
+$('#venus').click(function() {
+  spaceCalculator.users[spaceCalculator.users.length - 1].venusAge();
+  $('.user-greeting').text(`Your age on venus is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  console.log(spaceCalculator.users.length - 1);
+})
+$('#mars').click(function() {
+  spaceCalculator.users[spaceCalculator.users.length - 1].marsAge();
+  $('.user-greeting').text(`Your age on mars is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  console.log(spaceCalculator.users.length - 1);
+})
+$('#jupiter').click(function() {
+  spaceCalculator.users[spaceCalculator.users.length - 1].jupiterAge();
+  $('.user-greeting').text(`Your age on jupiter is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
   console.log(spaceCalculator.users.length - 1);
 })

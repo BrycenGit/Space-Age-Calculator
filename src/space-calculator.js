@@ -12,8 +12,8 @@ export class User {
     this.name = name;
     this.age = age;
     this.spaceAge;
-    this.yearsLeft;
-    this.extraYears
+    this.yearsExpected;
+    this.extraYears;
     this.averageExpectancy = 78.5
   }
   mercuryAge() {
@@ -30,9 +30,11 @@ export class User {
   }
   lifeExpectancy() {
     if (this.age >= this.averageExpectancy) {
-      this.extraYears = this.age - this.averageExpectancy;
+      this.yearsExpected = this.age - this.averageExpectancy;
+      console.log('congrats you surpassed average life expectency')
     } else {
-      this.yearsLeft = this.averageExpectancy - this.age;
+      this.yearsExpected = this.averageExpectancy - this.age;
+      console.log('sorry what a bummer  not much time left')
     }
   }
 
