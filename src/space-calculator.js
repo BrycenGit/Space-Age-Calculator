@@ -4,6 +4,7 @@ export class User {
     this.age = age;
     this.spaceAge;
     this.yearsLeft;
+    this.extraYears
     this.averageExpectancy = 78.5
   }
   mercuryAge() {
