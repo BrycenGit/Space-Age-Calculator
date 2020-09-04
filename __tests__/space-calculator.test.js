@@ -1,5 +1,12 @@
-import { User } from './../src/space-calculator';
+import { User, Calculator } from './../src/space-calculator';
 
+describe('Calculator', () => {
+  let newCalculator = new Calculator();
+  
+  test('should create an object with an empty array', () => {
+    expect(newCalculator.users.length).toBe(0);
+  })
+})
 
 describe('User', ()=> {
   let newUser;

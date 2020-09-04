@@ -1,3 +1,9 @@
+export class Calculator {
+  constructor() {
+    this.users = [];
+  }
+}
+
 export class User {
   constructor(name, age) {
     this.name = name;
@@ -27,5 +33,5 @@ export class User {
     }
   }
 
-  
+
 }

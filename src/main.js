@@ -4,15 +4,21 @@ import "./css/styles.css";
 import $ from "jquery";
 import { User } from './../src/space-calculator';
 
-
+let newUser;
 
 $('form#user-input').submit(function(event) {
   event.preventDefault();
   let inputtedName = $('input#name').val();
-  let inputtedAge = $('input#age').val();
+  let inputtedAge = parseInt($('input#age').val());
   let newUser = new User(inputtedName, inputtedAge);
   let greeting = (`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`)
   $('#show').show();
   $('.user-greeting').text(greeting)
   console.log(newUser);
+})
+
+$('#mercury').click(function() {
+  newUser.mercuryAge();
+  $('.user-greeting').text(newUser.spaceAge)
+  console.log('hello');
 })
