@@ -4,4 +4,6 @@ export class User {
     this.age = age;
     this.spaceAge;
   }
+  mercuryAge() {
+    this.spaceAge = this.age * (.24)}
 }
