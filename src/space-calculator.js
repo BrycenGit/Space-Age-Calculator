@@ -43,5 +43,22 @@ export class User {
     }
   }
 
+  mercuryAgeAfter() {
+    this.spaceYearsExpected = Math.round(this.yearsExpected * (.24));
+    return (`${this.name}, on Mercury that is ${this.spaceYearsExpected} years!`);
+  }
+  venusAgeAfter() {
+    this.spaceYearsExpected = Math.round(this.yearsExpected * (.62));
+    return (`${this.name}, on Venus that is ${this.spaceYearsExpected} years!`);
+  }
+  marsAgeAfter() {
+    this.spaceYearsExpected = Math.round(this.yearsExpected * (1.88));
+    return (`${this.name}, on Mars that is ${this.spaceYearsExpected} years!`);
+  }
+  jupiterAgeAfter() {
+    this.spaceYearsExpected = Math.round(this.yearsExpected * (11.86));
+    return (`${this.name}, on Jupiter that is ${this.spaceYearsExpected} years!`);
+  }
+
 
 }

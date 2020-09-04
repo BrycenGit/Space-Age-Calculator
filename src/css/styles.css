@@ -5,3 +5,14 @@ body {
 #show {
   display: none;
 }
+#show-more {
+  display: none;
+}
+
+#show-expect {
+  display: none;
+}
+
+#redo {
+  display: none;
+}
