@@ -11,5 +11,5 @@ $('form#user-input').submit(function(event) {
   let newUser = new User(inputtedName, inputtedAge);
   let greeting = (`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`)
   $('#show').show();
-  $('#user-greeting').text(greeting)
+  $('.user-greeting').text(greeting)
 })
