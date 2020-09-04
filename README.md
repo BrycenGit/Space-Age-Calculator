@@ -28,9 +28,6 @@ This program will take a users age in years and return their age from different 
   * Input: 100
   * Output: 21.5
 
-
-
-
 ## _Languages Used_
 * HTML
 * CSS

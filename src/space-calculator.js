@@ -26,4 +26,6 @@ export class User {
       this.yearsLeft = this.averageExpectancy - this.age;
     }
   }
+
+  
 }
