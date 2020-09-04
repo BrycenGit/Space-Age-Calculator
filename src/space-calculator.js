@@ -30,10 +30,11 @@ export class User {
   lifeExpectancy() {
     if (this.age >= this.averageExpectancy) {
       this.yearsExpected = this.age - this.averageExpectancy;
-      console.log('congrats you surpassed average life expectency')
+      return (`congrats you surpassed average life expectency by ${this.yearsExpected} years!`);
+      
     } else {
       this.yearsExpected = this.averageExpectancy - this.age;
-      console.log('sorry what a bummer  not much time left')
+      return (`we are so sorry, you only have ${this.yearsExpected} years left on earth!`);
     }
   }
 
