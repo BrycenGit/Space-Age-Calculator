@@ -13,4 +13,7 @@ export class User {
   marsAge() {
     this.spaceAge = this.age * (1.88);
   }
+  jupiterAge() {
+    this.spaceAge = this.age * (11.86);
+  }
 }
