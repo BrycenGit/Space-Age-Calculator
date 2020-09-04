@@ -23,7 +23,7 @@ $('form#user-input').submit(function(event) {
 })
 
 $('#mercury').click(function() {
-  spaceCalculator.users[length].mercuryAge();
-  $('.user-greeting').text(spaceCalculator.users[0].spaceAge);
-  console.log(LastInArray);
+  spaceCalculator.users[spaceCalculator.users.length - 1].mercuryAge();
+  $('.user-greeting').text(`Your mars age is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  console.log(spaceCalculator.users.length - 1);
 })
