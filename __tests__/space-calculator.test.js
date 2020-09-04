@@ -17,4 +17,7 @@ describe('User', ()=> {
     newUser.mercuryAge();
     expect(newUser.spaceAge).toBe(6.72)
   })
+  test('Will take in an age and return age multiplied by (.62) for venus', () => {
+    expect(newUser.spaceAge).toBe(20)
+  })
 })
