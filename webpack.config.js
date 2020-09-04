@@ -36,7 +36,7 @@ module: {
           /spec/
         ],
       loader: "eslint-loader"
-    }
+    },
     {
       test: /\.(gif|png|jpe?g)$/,
       use: [
