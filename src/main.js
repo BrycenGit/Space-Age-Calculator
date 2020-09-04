@@ -14,28 +14,28 @@ $('form#user-input').submit(function(event) {
   $('input#name').val('');
   let newUser = new User(inputtedName, inputtedAge);
   spaceCalculator.addUser(newUser);
-  let greeting = (`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`)
+
   $('#show').show();
-  $('.user-greeting').text(greeting);
+  $('.space-age').text('');
+  $('.user-greeting').text(`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`);
 })
 
 $('#mercury').click(function() {
-  spaceCalculator.users[spaceCalculator.users.length - 1].mercuryAge();
-  $('.space-age').text(`${spaceCalculator.users[spaceCalculator.users.length - 1].name}, your age on mercury is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].mercuryAge());
+
 })
 $('#venus').click(function() {
-  spaceCalculator.users[spaceCalculator.users.length - 1].venusAge();
-  $('.space-age').text(`${spaceCalculator.users[spaceCalculator.users.length - 1].name}, your age on venus is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].venusAge());
 })
+
 $('#mars').click(function() {
-  spaceCalculator.users[spaceCalculator.users.length - 1].marsAge();
-  $('.space-age').text(`${spaceCalculator.users[spaceCalculator.users.length - 1].name}, your age on mars is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].marsAge());
+
 })
 $('#jupiter').click(function() {
-  spaceCalculator.users[spaceCalculator.users.length - 1].jupiterAge();
-  $('.space-age').text(`${spaceCalculator.users[spaceCalculator.users.length - 1].name}, your age on jupiter is ${spaceCalculator.users[spaceCalculator.users.length - 1].spaceAge}!`);
+  $('.space-age').text(spaceCalculator.users[spaceCalculator.users.length - 1].jupiterAge());
 })
+
 $('#expected').click(function() {
-  // spaceCalculator.users[spaceCalculator.users.length - 1].lifeExpectancy();
   $('.expected').text(spaceCalculator.users[spaceCalculator.users.length - 1].lifeExpectancy());
 })

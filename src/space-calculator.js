@@ -13,19 +13,24 @@ export class User {
     this.age = age;
     this.spaceAge;
     this.yearsExpected;
+    this.spaceYearsExpected;
     this.averageExpectancy = 78
   }
   mercuryAge() {
     this.spaceAge = Math.round(this.age * (.24));
+    return (`${this.name}, your age on Mercury is ${this.spaceAge}!`);
   }
   venusAge() {
     this.spaceAge = Math.round(this.age * (.62));
+    return (`${this.name}, your age on Venus is ${this.spaceAge}!`);
   }
   marsAge() {
     this.spaceAge = Math.round(this.age * (1.88));
+    return (`${this.name}, your age on Mars is ${this.spaceAge}!`);
   }
   jupiterAge() {
     this.spaceAge = Math.round(this.age * (11.86));
+    return (`${this.name}, your age on Jupiter is ${this.spaceAge}!`);
   }
   lifeExpectancy() {
     if (this.age >= this.averageExpectancy) {
