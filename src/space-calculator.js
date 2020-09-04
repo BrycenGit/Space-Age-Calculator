@@ -5,5 +5,9 @@ export class User {
     this.spaceAge;
   }
   mercuryAge() {
-    this.spaceAge = this.age * (.24)}
+    this.spaceAge = this.age * (.24);
+  }
+  venusAge() {
+    this.spaceAge = this.age * (.62);
+  }
 }
