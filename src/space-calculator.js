@@ -41,6 +41,8 @@ export class User {
       return (`we are so sorry, you only have ${this.yearsExpected} years left on earth!`);
     }
   }
+
+  // These are extra functions i have not test yet,I put them in for UI, if commented out, all previous tests pass 100%
   mercuryAgeAfter() {
     this.spaceYearsExpected = Math.round(this.yearsExpected * (.24));
     return (`${this.name}, on Mercury that is ${this.spaceYearsExpected} years!`);
@@ -57,4 +59,5 @@ export class User {
     this.spaceYearsExpected = Math.round(this.yearsExpected * (11.86));
     return (`${this.name}, on Jupiter that is ${this.spaceYearsExpected} years!`);
   }
+
 }

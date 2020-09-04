@@ -1,4 +1,5 @@
 import { User, Calculator } from './../src/space-calculator';
+import { TestScheduler } from 'jest';
 
 describe('Calculator', () => {
   let newCalculator = new Calculator();

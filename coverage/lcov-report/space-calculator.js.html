@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.41% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/29</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -36,16 +36,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>8/12</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.41% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/29</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -115,7 +115,10 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,20 +162,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class Calculator {
   constructor() {
@@ -217,22 +223,25 @@ export class User {
       return (`we are so sorry, you only have ${this.yearsExpected} years left on earth!`);
     }
   }
-<span class="fstat-no" title="function not covered" >  me</span>rcuryAgeAfter() {
-<span class="cstat-no" title="statement not covered" >    this.spaceYearsExpected = Math.round(this.yearsExpected * (.24));</span>
-<span class="cstat-no" title="statement not covered" >    return (`${this.name}, on Mercury that is ${this.spaceYearsExpected} years!`);</span>
-  }
-<span class="fstat-no" title="function not covered" >  ve</span>nusAgeAfter() {
-<span class="cstat-no" title="statement not covered" >    this.spaceYearsExpected = Math.round(this.yearsExpected * (.62));</span>
-<span class="cstat-no" title="statement not covered" >    return (`${this.name}, on Venus that is ${this.spaceYearsExpected} years!`);</span>
-  }
-<span class="fstat-no" title="function not covered" >  ma</span>rsAgeAfter() {
-<span class="cstat-no" title="statement not covered" >    this.spaceYearsExpected = Math.round(this.yearsExpected * (1.88));</span>
-<span class="cstat-no" title="statement not covered" >    return (`${this.name}, on Mars that is ${this.spaceYearsExpected} years!`);</span>
-  }
-<span class="fstat-no" title="function not covered" >  ju</span>piterAgeAfter() {
-<span class="cstat-no" title="statement not covered" >    this.spaceYearsExpected = Math.round(this.yearsExpected * (11.86));</span>
-<span class="cstat-no" title="statement not covered" >    return (`${this.name}, on Jupiter that is ${this.spaceYearsExpected} years!`);</span>
-  }
+&nbsp;
+  // These are extra functions i have not test yet, put them in for UI
+  // mercuryAgeAfter() {
+  //   this.spaceYearsExpected = Math.round(this.yearsExpected * (.24));
+  //   return (`${this.name}, on Mercury that is ${this.spaceYearsExpected} years!`);
+  // }
+  // venusAgeAfter() {
+  //   this.spaceYearsExpected = Math.round(this.yearsExpected * (.62));
+  //   return (`${this.name}, on Venus that is ${this.spaceYearsExpected} years!`);
+  // }
+  // marsAgeAfter() {
+  //   this.spaceYearsExpected = Math.round(this.yearsExpected * (1.88));
+  //   return (`${this.name}, on Mars that is ${this.spaceYearsExpected} years!`);
+  // }
+  // jupiterAgeAfter() {
+  //   this.spaceYearsExpected = Math.round(this.yearsExpected * (11.86));
+  //   return (`${this.name}, on Jupiter that is ${this.spaceYearsExpected} years!`);
+  // }
+&nbsp;
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -240,7 +249,7 @@ export class User {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Sep 04 2020 16:28:08 GMT-0700 (Pacific Daylight Time)
+                at Fri Sep 04 2020 16:44:57 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>
