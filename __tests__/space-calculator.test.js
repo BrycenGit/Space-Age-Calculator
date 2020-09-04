@@ -21,7 +21,7 @@ describe('User', ()=> {
     newUser.venusAge();
     expect(newUser.spaceAge).toBe(17.36)
   })
-  // test('Will take in an age and return age multiplied by (1.88) for mars', () => {
-  //   expect(newUser.spaceAge).toBe(20)
-  // })
+  test('Will take in an age and return age multiplied by (1.88) for mars', () => {
+    expect(newUser.spaceAge).toBe(20)
+  })
 })
