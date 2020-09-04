@@ -2,6 +2,7 @@ export class Calculator {
   constructor() {
     this.users = [];
   }
+
 }
 
 export class User {

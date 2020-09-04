@@ -5,6 +5,9 @@ describe('Calculator', () => {
   
   test('should create an object with an empty array', () => {
     expect(newCalculator.users.length).toBe(0);
+  }) 
+  test('should add user to users array', () => {
+    expect(newCalculator.users.length).toBe(1);
   })
 })
 
