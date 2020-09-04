@@ -7,6 +7,7 @@ describe('Calculator', () => {
     expect(newCalculator.users.length).toBe(0);
   }) 
   test('should add user to users array', () => {
+    newCalculator.addUser('brycen')
     expect(newCalculator.users.length).toBe(1);
   })
 })

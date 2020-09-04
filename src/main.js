@@ -2,23 +2,24 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import $ from "jquery";
-import { User } from './../src/space-calculator';
+import { User, Calculator } from './../src/space-calculator';
 
-let newUser;
+let spaceCalculator = new Calculator();
 
 $('form#user-input').submit(function(event) {
   event.preventDefault();
   let inputtedName = $('input#name').val();
   let inputtedAge = parseInt($('input#age').val());
   let newUser = new User(inputtedName, inputtedAge);
+  spaceCalculator.addUser(newUser);
   let greeting = (`Hello ${inputtedName}! You are ${inputtedAge} years old, but you knew that already. But did you know our program can tell you how old you are on other planets? Try it out.`)
   $('#show').show();
-  $('.user-greeting').text(greeting)
-  console.log(newUser);
+  $('.user-greeting').text(greeting);
+  console.log(spaceCalculator.users[0]);
 })
 
 $('#mercury').click(function() {
-  newUser.mercuryAge();
-  $('.user-greeting').text(newUser.spaceAge)
+  spaceCalculator.users[0].mercuryAge();
+  $('.user-greeting').text(spaceCalculator.users[0].spaceAge);
   console.log('hello');
 })

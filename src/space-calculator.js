@@ -2,7 +2,9 @@ export class Calculator {
   constructor() {
     this.users = [];
   }
-
+  addUser(userToAdd) {
+    this.users.push(userToAdd);
+  } 
 }
 
 export class User {

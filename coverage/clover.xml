@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1599244479500" clover="3.2.0">
-  <project timestamp="1599244479500" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="23" coveredelements="23" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+<coverage generated="1599244658416" clover="3.2.0">
+  <project timestamp="1599244658416" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8" elements="25" coveredelements="25" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="space-calculator.js" path="C:\Users\Brycen\Desktop\inter-galactic-planetary-age-calculator\src\space-calculator.js">
-      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="10" count="8" type="stmt"/>
-      <line num="11" count="8" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
       <line num="12" count="8" type="stmt"/>
       <line num="13" count="8" type="stmt"/>
       <line num="14" count="8" type="stmt"/>
       <line num="15" count="8" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="30" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="31" count="1" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="33" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
