@@ -15,18 +15,22 @@ describe('User', ()=> {
   })
   test('Will take in an age and return age multiplied by (.24) for mercury', () => {
     newUser.mercuryAge();
-    expect(newUser.spaceAge).toBe(6.72)
+    expect(newUser.spaceAge).toBe(6.72);
   })
   test('Will take in an age and return age multiplied by (.62) for venus', () => {
     newUser.venusAge();
-    expect(newUser.spaceAge).toBe(17.36)
+    expect(newUser.spaceAge).toBe(17.36);
   })
   test('Will take in an age and return age multiplied by (1.88) for mars', () => {
     newUser.marsAge();
-    expect(newUser.spaceAge).toBe(52.64)
+    expect(newUser.spaceAge).toBe(52.64);
   })
   test('Will take in an age and return age multiplied by (11.86) for jupiter', () => {
     newUser.jupiterAge();
-    expect(newUser.spaceAge).toBe(332.08)
+    expect(newUser.spaceAge).toBe(332.08);
+  })
+  test('will take user age and return how many years they will have to live based on average life expectancy(us = 78.5)', () => {
+    expect(newUser.yearsLeft).toBe(20);
+    
   })
 })
