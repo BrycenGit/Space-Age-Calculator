@@ -2,13 +2,15 @@ import { User } from './../src/space-calculator';
 import { TestScheduler } from 'jest';
 
 describe('User', ()=> {
+  let name = 'brycen';
+  let age = 28;
   
   beforeEach(() => {
-    let user = 'brycen';
-    let age = 28;
+
   })
   
   test('should creat an object with user name and user age', () => {
-    expect().tobe('brycen')
+    let newUser = new User (name, age);
+    expect(newUser.age).toBe(28);
   })
 })
